@@ -8,38 +8,116 @@
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- Header Content -->
-    <header>
+    <header class="main-header">
       <!-- Logo -->
-      <div>
-        <img />
-      </div>
-      <!-- Navigation Bar-->
+      <div class="main-logo"></div>
+
+      <!-- Navigation* -->
       <nav>
         <a href="#home-section">Home</a>
-        <a href="#our-profile-section">Our Profile</a>
+        <a href="#about-me-section">About Me</a>
         <a href="#portfolio-section">Portfolio</a>
-        <a href="#message-us-section">Message Us</a>
+        <a href="#contact-section">Contact</a>
       </nav>
     </header>
 
     <!-- Main Content -->
     <main>
       <!-- Home Section -->
-      <section id="home-section"></section>
+      <!-- Banner Content* -->
+      <div class="banner-card banner1">
+        <img src="https://www.adorama.com/alc/wp-content/uploads/2021/11/Types-of-Shots-for-Filmmakers-e1641493485327-1024x590.jpg" />
+        <div class="banner-text">
+          <h1>Hello anonymous, Welcome to my website</h1>
+        </div>
+      </div>
+      <div class="banner-card banner2">
+        <img src="https://idseducation.com/wp-content/uploads/2015/01/How-to-Avoid-3-Classic-Photo-Mistakes.jpg" />
+        <div class="banner-text">
+          <h1>Hello anonymous, Welcome to my website</h1>
+        </div>
+      </div>
+      <div class="banner-card banner3">
+        <img src="https://www.nyfa.edu/wp-content/uploads/2022/11/pexels-cottonbro-2773526-scaled-1.jpg" />
+        <div class="banner-text">
+          <h1>Hello anonymous, Welcome to my website</h1>
+        </div>
+      </div>
 
-      <!-- Our Profile Section -->
-      <section id="our-profile-section"></section>
+      <!-- About Me Section -->
+      <section id="about-me-section">
+        <header style="text-align: center; font-size: 25px">
+          <h1>About Me</h1>
+        </header>
+
+        <!-- About Me Text -->
+        <div class="section-content1">
+          <div class="logoprofil"></div>
+          <article class="teksartikel">
+            <h3>
+              Hai! Good to see you! Saya Acen, seorang videografer yang suka mengeksplorasi ide-ide kreatif di dunia digital. Saya aktif dalam membuat video sembari membuka jasa freelance yang berfokus pada bidang videografi ataupun
+              fotografi. Bagi saya, kerja kreatif adalah tentang bercerita, menyampaikan pesan, dan menciptakan sesuatu yang bisa menginspirasi. Senang bisa bertemu, semoga kita bisa berkolaborasi/bekerja bersama dan berbagi inspirasi ke
+              depannya!
+            </h3>
+            <h3>Tentunya saya punya visi dan misi yang membuat saya terus mengejar karir di bidang videografi.</h3>
+            <h3>Visi saya membawa cerita menjadi nyata melalui lensa dan menciptakan karya visual yang menginspirasi.</h3>
+            <h3>
+              Misi saya mengabadikan momen dan ide dengan sudut pandang yang unik dan autentik, berkolaborasi dengan brand/komunitas untuk menciptakan konten yang bermakna dan relevan, dan memberikan hasil video yang tidak hanya indah
+              secara visual, tetapi juga kuat secara emosional dan naratif.
+            </h3>
+          </article>
+        </div>
+      </section>
 
       <!-- Portfolio Section -->
-      <section id="portfolio-section"></section>
+      <section id="portfolio-section">
+        <header style="text-align: center; font-size: 25px">
+          <h2>Portfolio</h2>
+        </header>
 
-      <!-- Message Us Section -->
-      <section id="message-us-section"></section>
+        <!-- Portfolio Text -->
+        <div class="fotoportfolio" style="margin-top: 50px">
+          <img src="/assets/gmm.jpeg" alt="Event" style="width: 300px; height: 300px; border-radius: 50%; margin-left: 300px" />
+        </div>
+        <div>
+          <img src="/assets/kamera.jpeg" alt="Camera" style="width: 300px; height: 300px; border-radius: 50%; margin-left: 900px; margin-top: -50px" />
+        </div>
+        <article class="section-content">
+          <p>Saya menjadi videografer pada kegiatan sekolah, kemudian perlahan merintis bisnis freelance videografi bersama teman, membuat berbagai video, seperti wedding, gathering, grand opening, birthday, dan sebagainya</p>
+        </article>
+      </section>
+
+      <!--  Contact Section -->
+      <section id="contact-section">
+        <header>
+          <h2>Contact Me</h2>
+        </header>
+
+        <!-- Contact Form -->
+        <form style="font-size: 20px" method="post">
+          <label for="name"> Nama :</label>
+          <input type="text" id="name" name="name" style="width: 300px; height: 30px; border-radius: 20px; padding-left: 10px; color: gray" required /> <br />
+          <label for="tanggal-lahir"> Tanggal Lahir :</label>
+          <input type="date" id="tanggal-lahir" name="tanggal-lahir" style="width: 238px; height: 30px; border-radius: 20px; padding-left: 10px; color: gray" /> <br />
+          <label for="jenis-kelamin"> Jenis Kelamin :</label>
+          <input type="radio" id="jenis-kelamin" name="jenis-kelamin" value="jenis-kelamin" />
+          <label for="jenis-kelamin">Laki-laki</label>
+          <input type="radio" id="jenis-kelamin" name="jenis-kelamin" value="jenis-kelamin" />
+          <label for="jenis-kelamin">Perempuan</label> <br />
+          <label for="pesan"> Pesan :</label>
+          <textarea id="pesan" name="pesan" rows="10" cols="40" style="border-radius: 20px; padding-left: 10px; padding-top: 10px; color: gray"></textarea> <br />
+          <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+      </section>
     </main>
 
     <!-- Footer Content -->
-    <footer></footer>
+    <footer style="color: white">
+      <span>Made by Acen</span>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

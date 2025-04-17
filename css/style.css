@@ -1,0 +1,153 @@
+body {
+  background-color: rgb(36, 40, 40);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.main-logo {
+  height: 50px;
+  width: 50px;
+  background-image: url(https://i.pinimg.com/736x/43/61/09/4361091dd491bacbbcdbaa0be7a2d2be.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+  color: rgb(193, 185, 185);
+  border: 1px solid;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+main > section {
+  height: 800px;
+}
+
+.section-content {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+.banner-card {
+  position: relative;
+}
+.banner-card img {
+  width: 85%;
+  opacity: 0.8;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: -10px;
+  margin-bottom: -15px;
+  padding-left: 120px;
+  padding-bottom: 20px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  color: rgb(242, 242, 242);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(242, 242, 242);
+  font-family: poppins;
+}
+
+main {
+  color: rgb(193, 185, 185);
+}
+
+article {
+  font-family: poppins;
+  font-style: normal;
+  text-align: center;
+}
+
+.img-profil {
+  float: right;
+  width: 40%;
+}
+
+.section-content {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  padding: 30px;
+}
+
+.section-content1 {
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  justify-items: center;
+  padding-top: 20px;
+}
+
+.teksartikel {
+  margin-top: 6%;
+  text-align: center;
+}
+
+#about-me-section {
+  height: 750px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logoprofil {
+  height: 100px;
+  width: 100px;
+  background-image: url(https://i.pinimg.com/736x/43/61/09/4361091dd491bacbbcdbaa0be7a2d2be.jpg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#portfolio-section {
+  height: 800px;
+  padding-top: 30px;
+}
+
+#contact-section {
+  height: 800px;
+  padding-top: 30px;
+  padding-left: 200px;
+  font-size: 25px;
+}
+
+.fotoportfolio {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 480ox) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
